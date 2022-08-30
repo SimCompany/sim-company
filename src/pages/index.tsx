@@ -41,7 +41,7 @@ export default function Home() {
           gridTemplateColumns={{ sm: '1fr', md: '60% 40%', lg: '55% 45%' }}
           w='100%'
           maxW={{ sm: '90%', lg: '80%', xl: '80%', '2xl': '70%' }}
-          mx={{ sm: '5%', lg: '10%', xl: '10%', '2xl': '15%', '3xl': '50%' }}
+          mx={{ sm: '5%', lg: '10%', xl: '10%', '2xl': '15%' }}
           position='absolute'
           bottom='0'>
 
@@ -72,13 +72,14 @@ export default function Home() {
               px='2'
               color='white'
               fontWeight='semibold'
-              fontSize={{ md: '1.5vw', xl: '1.22vw', '2xl': '21.5px' }}
+              fontSize={{base:'3vw', md: '1.5vw', xl: '1.22vw', '2xl': '21.5px' }}
               width={{ md: '98%', xl: '88%', '2xl': '550px' }}
               textAlign='center'
             >
               CENTRAL TELEFÔNICA | VÍDEO | CHAT AO VIVO
             </Text>
-            <Text color='white' lineHeight={1.5} mt='4'
+            <Text color='white' lineHeight={1.5} 
+            mt={{base:'2', sm:'4'}}
               textAlign={{ base: 'center', md: 'start' }}
             >
               Uma tecnologia de computação onde utiliza a internet
@@ -89,8 +90,8 @@ export default function Home() {
             </Text>
           </Box>
           <Box
-            maxW={{ sm: '80%', md: '100%' }}
-            mt={{ base: '0%', sm: '15%', md: '0px' }}
+            maxW={{base:'60%', sm: '80%', md: '100%' }}
+            pt={{ base: '6%', sm: '15%', md: '0px' }}
             m='0 auto'
           >
             <Image alt='atendente' src={Atendente} />
