@@ -38,7 +38,7 @@ export default function Serviços() {
         <Grid
           gridTemplateColumns={{ sm: '1fr', md: '50% 40%', lg: '45% 45%' }}
           maxW={{ sm: '90%', md: '80%', '2xl': '1344px' }}
-          mx={{ sm: '5%', md: '10%', '2xl': '15%' }}
+          mx={{base:'5%', md: '10%', '2xl': '15%' }}
 
           position='absolute'
           bottom={{ base: '0px', sm: '-100px' }}
@@ -73,7 +73,7 @@ export default function Serviços() {
               px='2'
               color='white'
               fontWeight='semibold'
-              fontSize={{ md: '1.0vw', xl: '1.10vw', '2xl': '18px' }}
+              fontSize={{base:'3vw', md: '1.0vw', xl: '1.10vw', '2xl': '18px' }}
               width={{ md: '98%', xl: '88%', '2xl': '550px' }}
               textAlign='center'
             >
@@ -89,9 +89,9 @@ export default function Serviços() {
             </Text>
           </Box>
           <Box
-            maxW={{ sm: '80%', md: '100%' }}
+            maxW={{base:'70%', sm: '80%', md: '100%' }}
             mt={{ base: '0%', sm: '50px', md: '150px', lg: '500px' }}
-            py={{ base: '150px', md: '120px', lg: '0px' }}
+            py={{ base: '0px', sm:'100px', md: '120px', lg: '0px' }}
             m='0 auto'
           >
             <Image alt='atendente' src={Product} />
@@ -124,7 +124,7 @@ export default function Serviços() {
       <Grid
         maxW='1344px'
         justifyItems='center'
-        m={{ base: '5%', md: '10%', '2xl': '15%' }}
+        mx={{ base: '5%', md: '10%', '2xl': '15%' }}
         templateColumns={{ base: '1fr', sm: '1fr 1fr', md: '1fr 1fr 1fr', lg: '1fr 1fr 1fr 1fr', xl: '1fr 1fr 1fr 1fr 1fr' }}
         templateRows={{ base: '1fr 1fr' }}
 
