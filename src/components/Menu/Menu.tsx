@@ -51,9 +51,8 @@ export default function Menu() {
       justifyContent='space-between'
       h='60px'
       alignSelf='center'
-      w='100%'
-      maxW={{base: '90%', lg:'80%', '2xl':'66%'}}
-      mx={{base: '5%', lg:'10%', '2xl':'17%'}}>
+      maxW={{base: '90%', lg:'1344px', '2xl':'1344px'}}
+      mx={{base:'5%', lg:'10%', '2xl':'17%'}}>
       <Flex alignSelf='center'>
         <Text color='Green.500' fontSize='24px' fontWeight='medium' mr='1'>Sim</Text>
         <Text color='Blue.800' fontSize='24px' fontWeight='medium'>Company</Text>
@@ -65,7 +64,7 @@ export default function Menu() {
         <MenuItem link='/servicos'>
           Serviços
         </MenuItem>
-        <MenuItem link='/'>
+        <MenuItem link='/contato'>
           Contato
         </MenuItem>
 

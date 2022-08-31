@@ -3,11 +3,11 @@ import Image from 'next/image'
 import FormElement from "../components/Form/Form";
 import Background from './../img/index/fundo01.jpg'
 import Mobile from './../img/index/fundo-mobile.jpg'
-import Atendente from './../img/index/sistema-atendentes-call-center.png'
 
 import H2 from "../components/Texts/H2";
 import ButtonChakra from "../components/Button/Button";
 
+import Atendente from './../img/index/sistema-atendentes-call-center.png'
 import Phone from './../img/index/aparelho-ip.jpg'
 import Modelo from './../img/index/pabx-nuvem.jpg'
 import H3 from "../components/Texts/H3";
@@ -110,9 +110,9 @@ export default function Home() {
           <FormElement />
         </Box>
         <Box mt={{ base: '50px', md: '40px', lg: '0', xl: '40' }}>
-          <H2 mb='10'>3 motivos para mudar agora para o PABX em nuvem</H2>
+          <H2 mb='10'>3 Motivos para mudar agora para o PABX em nuvem</H2>
           <Box my='2'>
-            <H4 >INVISTA</H4>
+            <H4 >Invista</H4>
             <Text>
               Precisa do novo para a sua empresa, o melhor jeito é investir em
               quem oferece qualidade de verdade ao seu atendimento.
@@ -121,7 +121,7 @@ export default function Home() {
             </Text>
           </Box>
           <Box my='2'>
-            <H4 my='1'>TRANSFORME</H4>
+            <H4 my='1'>Transforme</H4>
             <Text>
               Potencializa a comunicação da sua empresa com as tecnologias
               VoIP e PABX em nuvem. Com a telefonia em nuvem, o seu negócio
@@ -131,7 +131,7 @@ export default function Home() {
             </Text>
           </Box>
           <Box my='2'>
-            <H4 my='1'>COMUNIQUE-SE</H4>
+            <H4 my='1'>Comunique-se</H4>
             <Text>
               Precisa do novo para a sua empresa, o melhor jeito é investir em
               quem oferece qualidade de verdade ao seu atendimento.
@@ -158,7 +158,7 @@ export default function Home() {
         m='auto'
         my='10%'>
         <GridItem alignSelf='center' area='text' mt={{ base: '40px', md: '0px' }}>
-          <H2 my='2'>GANHE APARELHO DE IP + RAMAL</H2>
+          <H2 my='2'>Ganhe aparelho de IP + RAMAL</H2>
           <Text>
             Transforma a velha tefonia fixa em uma moderna ferramenta
             de comunicação para sua empresa, transferindo todo o serviço
@@ -224,8 +224,8 @@ export default function Home() {
 
 
       <Flex my='10%' mx='10%' flexDir='column' alignItems='center'>
-        <H3 textAlign='center'>CONHEÇA AS 12 VANTAGENS</H3>
-        <H3 textAlign='center'>DOS NOSSOS PLANOS DE PABX EM NUVEM</H3>
+        <H3 textAlign='center'>Conheça as 12 vantagens</H3>
+        <H3 textAlign='center'>Dos nossos planos de PABX em nuvem</H3>
         <ButtonChakra mt='6' p='8'>GARANTIR PROMOÇÃO</ButtonChakra>
       </Flex>
 
@@ -233,12 +233,13 @@ export default function Home() {
       <Grid
         gridTemplateColumns={{ md: '1fr', lg: '1fr 1fr' }}
         mx={{ base: '5%', md: '7%', lg: '10%', '2xl': '15%' }}
-        gridColumnGap='5%'>
+        gridColumnGap='5%'
+        >
         <Box h='350px'>
           <iframe style={{ width: '100%', height: '100%' }} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7309.026665820644!2d-46.75947564816283!3d-23.657593744676134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53c6a003d321%3A0xab6c3d1dba73f4ec!2sCondom%C3%ADnio%20Conjunto%20Residencial%20Buena%20Vista!5e0!3m2!1spt-BR!2sbr!4v1661659201239!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
         </Box>
         <Box alignSelf='center' mt={{ base: '50px', lg: '0px' }}>
-          <H3>SOBRE NÓS</H3>
+          <H3>Sobre Nós</H3>
           <Text>Comece a cortar custos desnecessários em sua empresa,
             atualize a maneira que sua empresa se comunica!
             Gerenciamento de ramais com apenas 1 número, gravação
@@ -248,19 +249,7 @@ export default function Home() {
       </Grid>
 
 
-      <Grid bgColor='Blue.800' gridTemplateColumns='1fr 1fr' p='5% 15%' mt='10%'>
-        <GridItem>
-          <Text color='white'>email@sincompany.com</Text>
-          <Text color='white'>(11) 99999-9999</Text>
-          <Text color='white'>(11) 99999-9999</Text>
 
-          <Flex>
-            <Icon as={TiSocialFacebookCircular} color='white' fontSize='30' />
-            <Icon as={RiInstagramLine} mt='0.5' color='white' fontSize='26' />
-            <Icon as={TiSocialLinkedinCircular} color='white' fontSize='30' />
-          </Flex>
-        </GridItem>
-      </Grid>
 
     </main >
   )
