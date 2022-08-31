@@ -38,7 +38,7 @@ export default function Serviços() {
         <Grid
           gridTemplateColumns={{ sm: '1fr', md: '50% 40%', lg: '45% 45%' }}
           maxW={{ sm: '90%', md: '80%', '2xl': '1344px' }}
-          mx={{base:'5%', md: '10%', '2xl': '15%' }}
+          mx={{ base: '5%', md: '10%', '2xl': '15%' }}
 
           position='absolute'
           bottom={{ base: '0px', sm: '-100px' }}
@@ -73,7 +73,7 @@ export default function Serviços() {
               px='2'
               color='white'
               fontWeight='semibold'
-              fontSize={{base:'3vw', md: '1.0vw', xl: '1.10vw', '2xl': '18px' }}
+              fontSize={{ base: '3vw', md: '1.0vw', xl: '1.10vw', '2xl': '18px' }}
               width={{ md: '98%', xl: '88%', '2xl': '550px' }}
               textAlign='center'
             >
@@ -89,9 +89,9 @@ export default function Serviços() {
             </Text>
           </Box>
           <Box
-            maxW={{base:'70%', sm: '80%', md: '100%' }}
+            maxW={{ base: '70%', sm: '80%', md: '100%' }}
             mt={{ base: '0%', sm: '50px', md: '150px', lg: '500px' }}
-            py={{ base: '0px', sm:'100px', md: '120px', lg: '0px' }}
+            py={{ base: '0px', sm: '100px', md: '120px', lg: '0px' }}
             m='0 auto'
           >
             <Image alt='atendente' src={Product} />
@@ -222,13 +222,15 @@ export default function Serviços() {
 
       <Flex
         mt='100px'
-        mx={{ base: '5%', md: '10%', '2xl': '15%' }}
+        px={{ base: '5%', md: '10%', '2xl': '15%' }}
+        py={{ base: '40px', md: '50px', '2xl': '60px' }}
         flexDirection='column'
         alignItems='center'
+        bgColor='Green.300'
       >
-        <H4>Aproveite!</H4>
-        <Text color='Green.300' textAlign='center'>Não deixe para depois, realize uma cotação com um de nossos</Text>
-        <Text color='Green.300' textAlign='center'>especialistas e comece a mudar o rumo dos seus negócios</Text>
+        <H4 color='white'>Aproveite!</H4>
+        <Text color='white' textAlign='center'>Não deixe para depois, realize uma cotação com um de nossos</Text>
+        <Text color='white' textAlign='center'>especialistas e comece a mudar o rumo dos seus negócios</Text>
 
         <ButtonChakra p='26px 60px' mt='20px'>REALIZAR COTAÇÃO</ButtonChakra>
       </Flex>

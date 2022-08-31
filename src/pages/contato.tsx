@@ -12,7 +12,7 @@ export default function Contato() {
 
   return (
     <Box
-      mb={{ base: '400px',md:'1200px', lg: '500px', '2xl': '400px' }}
+      mb={{ base: '400px', sm:'500px',md:'1200px', lg: '500px', '2xl': '400px' }}
       position='relative'
       zIndex={-1}
     >
@@ -28,7 +28,7 @@ export default function Contato() {
         mx={{ sm: '5%', lg: '10%', xl: '10%', '2xl': '15%' }}
         position='absolute'
         columnGap='5%'
-        bottom={{ base: '-450px', md: '-1000px', xl: '-450px', '2xl': '-340' }}
+        bottom={{ base: '-450px', md: '-1000px', lg:'-450px', xl: '-450px', '2xl': '-340' }}
       >
 
 
@@ -55,9 +55,7 @@ export default function Contato() {
           </Box>
         </Box>
         <Box
-          maxW={{ base: '60%', sm: '80%', md: '100%' }}
-          pt={{ base: '6%', sm: '15%', md: '0px' }}
-          m='0 auto'
+          mt={{sm:'40px', md:'0px' }}
         >
           <FormElement />
         </Box>
