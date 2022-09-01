@@ -8,11 +8,11 @@ import InputForm from "./InputForm";
 export default function FormElement() {
 
   return (
-    <Flex as='form' w='100%' flexDirection='column' bgColor='Green.300' p='8'>
+    <Flex as='form' w='100%' flexDirection='column' bgColor='Green.300' p={{ base: '4', sm: '8' }}>
       <Box>
         <H2 color='white' textAlign='center'>Gostaria de receber uma proposta para o seu negócio?</H2>
 
-        <Text textAlign='center' color='white' my='4'>A Sin Company© ira te auxiliar com as melhores proposta e entregara um suporte completo desde a contratação até a instalação e suporte com equipamentos.</Text>
+        <Text textAlign='center' color='white' my={{ base: '2', sm: '4' }} fontSize={{ base: '14px', sm: '16px' }}>A Sin Company© ira te auxiliar com as melhores proposta e entregara um suporte completo desde a contratação até a instalação e suporte com equipamentos.</Text>
       </Box>
       <InputForm name='name' placeholder="Nome Completo" mb='4' />
       <Box display='grid' gridTemplateColumns={{ base: '1fr', sm: '1fr 1fr' }} gridColumnGap='4' gridRowGap='4'>
@@ -27,7 +27,7 @@ export default function FormElement() {
 
       <Flex alignItems='start' mt='6'>
         <Checkbox my='5' color='white' colorScheme='red' />
-        <Text color='white' mt='4' ml='2'>
+        <Text color='white' mt='4' ml='2' fontSize={{ base: '14px', sm: '16px' }}>
           Concordo em permitir que a Sin Company tenha acesso aos meus dados para me responder com propostas promocionais referente ao meu pedido.
         </Text>
       </Flex>
