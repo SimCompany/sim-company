@@ -12,7 +12,7 @@ export default function FormElement() {
       <Box>
         <H2 color='white' textAlign='center'>Gostaria de receber uma proposta para o seu negócio?</H2>
 
-        <Text textAlign='center' color='white' my={{ base: '2', sm: '4' }} fontSize={{ base: '14px', sm: '16px' }}>A Sin Company© ira te auxiliar com as melhores proposta e entregara um suporte completo desde a contratação até a instalação e suporte com equipamentos.</Text>
+        <Text textAlign='center' color='white' my={{ base: '2', sm: '4' }} fontSize={{ base: '14px', sm: '16px' }}>A Sim Company© ira te auxiliar com as melhores proposta e entregara um suporte completo desde a contratação até a instalação e suporte com equipamentos.</Text>
       </Box>
       <InputForm name='name' placeholder="Nome Completo" mb='4' />
       <Box display='grid' gridTemplateColumns={{ base: '1fr', sm: '1fr 1fr' }} gridColumnGap='4' gridRowGap='4'>

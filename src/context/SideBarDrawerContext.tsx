@@ -15,6 +15,7 @@ export default function SidebarDrawerProvider({ children }: SidebarDrawerProvide
   const disclosure = useDisclosure()
   const router = useRouter()
 
+
   useEffect(() => {
     disclosure.onClose
   }, [router.asPath])

@@ -1,16 +1,16 @@
-import { Link as ChakraLink } from "@chakra-ui/react";
+import { Link as ChakraLink, LinkProps } from "@chakra-ui/react";
 import Link from "next/link";
 import { ReactNode } from "react";
 
-type MenuItem = {
+interface MenuItem extends LinkProps {
   children: ReactNode,
-  link: any
+  link: any,
 }
 
-export default function MenuItem({ children, link }: MenuItem) {
+export default function MenuItem({ children, link, ...rest }: MenuItem) {
   return (
-    <Link href={link}>
-      <ChakraLink>
+    <Link href={link} >
+      <ChakraLink {...rest}>
         {children}
       </ChakraLink>
     </Link>

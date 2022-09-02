@@ -17,6 +17,7 @@ import { TiSocialLinkedinCircular, TiSocialFacebookCircular } from 'react-icons/
 import { Icon } from "@chakra-ui/react";
 import H4 from "../components/Texts/H4";
 import { useEffect } from "react";
+import Information from "../components/Information/Information";
 
 
 export default function Home() {
@@ -72,14 +73,14 @@ export default function Home() {
               px='2'
               color='white'
               fontWeight='semibold'
-              fontSize={{base:'3vw', md: '1.5vw', xl: '1.22vw', '2xl': '21.5px' }}
+              fontSize={{ base: '3vw', md: '1.5vw', xl: '1.22vw', '2xl': '21.5px' }}
               width={{ md: '98%', xl: '88%', '2xl': '550px' }}
               textAlign='center'
             >
               CENTRAL TELEFÔNICA | VÍDEO | CHAT AO VIVO
             </Text>
-            <Text color='white' lineHeight={1.5} 
-            mt={{base:'2', sm:'4'}}
+            <Text color='white' lineHeight={1.5}
+              mt={{ base: '2', sm: '4' }}
               textAlign={{ base: 'center', md: 'start' }}
             >
               Uma tecnologia de computação onde utiliza a internet
@@ -90,7 +91,7 @@ export default function Home() {
             </Text>
           </Box>
           <Box
-            maxW={{base:'60%', sm: '80%', md: '100%' }}
+            maxW={{ base: '60%', sm: '80%', md: '100%' }}
             pt={{ base: '6%', sm: '15%', md: '0px' }}
             m='0 auto'
           >
@@ -111,34 +112,28 @@ export default function Home() {
         </Box>
         <Box mt={{ base: '50px', md: '40px', lg: '0', xl: '40' }}>
           <H2 mb='10'>3 Motivos para mudar agora para o PABX em nuvem</H2>
-          <Box my='2'>
-            <H4 >Invista</H4>
-            <Text>
-              Precisa do novo para a sua empresa, o melhor jeito é investir em
-              quem oferece qualidade de verdade ao seu atendimento.
-              A SIM Company possui tráfego próprio de terminação de chamadas
-              garantindo mais qualidade nas suas ligações.
-            </Text>
-          </Box>
-          <Box my='2'>
-            <H4 my='1'>Transforme</H4>
-            <Text>
-              Potencializa a comunicação da sua empresa com as tecnologias
-              VoIP e PABX em nuvem. Com a telefonia em nuvem, o seu negócio
-              terá mais do que uma telefonia convencional, um sistema em
-              nuvem, que proporcionará inovação, facilidades e mobilidade para
-              o seu dia a dia.
-            </Text>
-          </Box>
-          <Box my='2'>
-            <H4 my='1'>Comunique-se</H4>
-            <Text>
-              Precisa do novo para a sua empresa, o melhor jeito é investir em
-              quem oferece qualidade de verdade ao seu atendimento.
-              A SIM Company possui tráfego próprio de terminação de chamadas
-              garantindo mais qualidade nas suas ligações.
-            </Text>
-          </Box>
+          <Information
+            title='Invista'
+            description='Precisa do novo para a sua empresa, o melhor jeito é investir em
+            quem oferece qualidade de verdade ao seu atendimento.
+            A SIM Company possui tráfego próprio de terminação de chamadas
+            garantindo mais qualidade nas suas ligações.'
+          />
+          <Information
+            title='Transforme'
+            description='Potencializa a comunicação da sua empresa com as tecnologias
+            VoIP e PABX em nuvem. Com a telefonia em nuvem, o seu negócio
+            terá mais do que uma telefonia convencional, um sistema em
+            nuvem, que proporcionará inovação, facilidades e mobilidade para
+            o seu dia a dia.'
+          />
+          <Information
+            title='Comunique-se'
+            description='Precisa do novo para a sua empresa, o melhor jeito é investir em
+            quem oferece qualidade de verdade ao seu atendimento.
+            A SIM Company possui tráfego próprio de terminação de chamadas
+            garantindo mais qualidade nas suas ligações.'
+          />
         </Box>
       </Grid>
 
@@ -158,13 +153,12 @@ export default function Home() {
         m='auto'
         my='10%'>
         <GridItem alignSelf='center' area='text' mt={{ base: '40px', md: '0px' }}>
-          <H2 my='2'>Ganhe aparelho de IP + RAMAL</H2>
-          <Text>
-            Transforma a velha tefonia fixa em uma moderna ferramenta
+          <Information
+            title='Ganhe aparelho de IP + RAMAL'
+            description='Transforma a velha tefonia fixa em uma moderna ferramenta
             de comunicação para sua empresa, transferindo todo o serviço
             de voz para a NUVEM. Customizamos um plano de voz adequado
-            a realidade da sua empresa e seu PABX VIRTUAL será GRATUITO!
-          </Text>
+            a realidade da sua empresa e seu PABX VIRTUAL será GRATUITO!' />
           <ButtonChakra my='6' w={{ base: '100%', lg: '80%' }} p='8'>GARANTIR PROMOÇÃO</ButtonChakra>
         </GridItem>
         <GridItem area='foto'>
@@ -234,17 +228,18 @@ export default function Home() {
         gridTemplateColumns={{ md: '1fr', lg: '1fr 1fr' }}
         mx={{ base: '5%', md: '7%', lg: '10%', '2xl': '15%' }}
         gridColumnGap='5%'
-        >
+      >
         <Box h='350px'>
           <iframe style={{ width: '100%', height: '100%' }} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7309.026665820644!2d-46.75947564816283!3d-23.657593744676134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53c6a003d321%3A0xab6c3d1dba73f4ec!2sCondom%C3%ADnio%20Conjunto%20Residencial%20Buena%20Vista!5e0!3m2!1spt-BR!2sbr!4v1661659201239!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
         </Box>
         <Box alignSelf='center' mt={{ base: '50px', lg: '0px' }}>
-          <H3>Sobre Nós</H3>
-          <Text>Comece a cortar custos desnecessários em sua empresa,
+          <Information
+            title='Sobre nós'
+            description='Comece a cortar custos desnecessários em sua empresa,
             atualize a maneira que sua empresa se comunica!
             Gerenciamento de ramais com apenas 1 número, gravação
             em nuvem e suporte para videoconferência integrada aos
-            melhores apps de chamada.</Text>
+            melhores apps de chamada.' />
         </Box>
       </Grid>
 

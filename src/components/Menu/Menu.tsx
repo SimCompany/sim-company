@@ -1,48 +1,98 @@
-import { Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, HStack, Link, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, HStack, Icon, IconButton, Link, Text, useBreakpointValue, useDisclosure } from "@chakra-ui/react";
+import { useEffect } from "react";
+import { RiMenuLine } from "react-icons/ri";
 import { useSidebarDrawer } from "../../context/SideBarDrawerContext";
+import Logo from "./Logo";
 import MenuItem from "./MenuItem";
+import SetMenuItem from "./SetMenuItem";
+
 
 
 
 
 export default function Menu() {
-  const { isOpen, onClose } = useSidebarDrawer()
+  const { isOpen, onClose, onOpen } = useDisclosure()
 
-  const isDrawerSidebar = useBreakpointValue({
+  const isDrawer = useBreakpointValue({
     base: true,
     lg: false
   })
 
+  useEffect(() => {
+    setTimeout(() => {
+      console.log(isOpen)
+    }, 3000)
+  })
 
-  if (isDrawerSidebar) {
+  if (isDrawer) {
     return (
-      <Drawer isOpen={isOpen} placement='right' onClose={onClose}>
-        <DrawerOverlay>
-          <DrawerContent bg='blackAlpha.900' p='4'>
-            <DrawerCloseButton mt='6' />
-            <DrawerHeader>Navegação</DrawerHeader>
+      <>
+        <Flex
+          justifyContent='space-between'
+          h='60px'
+          alignSelf='center'
+          maxW={{ '2xl': '1344px' }}
+          bgColor='white'
+          mx={{ base: '5%', lg: '10%', '2xl': '15%' }}>
+          <Logo w='50px' />
 
-            <DrawerBody>
-              <Flex justifyContent='space-between' w='100%' maxW='80%' mx='10%'>
-                <Box>
-                  LOGO
-                </Box>
-                <HStack spacing='8'>
-                  <Link>
-                    primeiro
-                  </Link>
-                  <Link>
-                    segundo
-                  </Link>
-                  <Link>
-                    terceiro
-                  </Link>
-                </HStack>
-              </Flex>
-            </DrawerBody>
-          </DrawerContent>
-        </DrawerOverlay>
-      </Drawer>
+          {isDrawer && (
+            <IconButton
+              icon={<Icon as={RiMenuLine} />}
+              fontSize={24}
+              variant='unstyled'
+              aria-label="Menu"
+              onClick={onOpen}
+              mt='18px'
+            >
+
+            </IconButton>)}
+        </Flex>
+
+        <Drawer isOpen={isOpen} placement='left' onClose={onClose}>
+          <DrawerOverlay>
+            <DrawerContent bg='Blue.800' p='4'>
+              <DrawerCloseButton mt='8' color='white' />
+
+
+              <DrawerBody mt='6'>
+                <Flex
+                  display='flex'
+                  flexDirection='column'
+                  alignItems='center'
+                  justifyContent='space-between'
+                  h='100%'
+                >
+                  <SetMenuItem
+                    display='flex'
+                    textAlign='center'
+                    flexDirection='column'
+                    color='white'
+                    fontSize='18px'
+                    direction='column'
+                    spacing={4}
+                  />
+
+                  <Flex
+                    alignItems='center'
+                    flexDirection='column'>
+                    <Logo
+                      w='120px' />
+                    <Text
+                      mt='4'
+                      fontSize='12px'
+                      textAlign='center'
+                      color='white'
+                    >Soluções em telefonia</Text>
+                  </Flex>
+
+                </Flex>
+              </DrawerBody>
+            </DrawerContent>
+          </DrawerOverlay>
+        </Drawer>
+      </>
+
     )
   }
 
@@ -51,24 +101,15 @@ export default function Menu() {
       justifyContent='space-between'
       h='60px'
       alignSelf='center'
-      maxW={{base: '90%', lg:'1344px', '2xl':'1344px'}}
-      mx={{base:'5%', lg:'10%', '2xl':'17%'}}>
+      maxW={{ '2xl': '1344px' }}
+      mx={{ base: '5%', lg: '10%', '2xl': '15%' }}>
       <Flex alignSelf='center'>
         <Text color='Green.500' fontSize='24px' fontWeight='medium' mr='1'>Sim</Text>
         <Text color='Blue.800' fontSize='24px' fontWeight='medium'>Company</Text>
       </Flex>
-      <HStack spacing='8'>
-        <MenuItem link='/'>
-          Sim Company
-        </MenuItem>
-        <MenuItem link='/servicos'>
-          Serviços
-        </MenuItem>
-        <MenuItem link='/contato'>
-          Contato
-        </MenuItem>
 
-      </HStack>
+      <SetMenuItem direction='row' alignItems='center' spacing='8' />
+
     </Flex>
   )
 }
