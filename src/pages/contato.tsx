@@ -49,6 +49,7 @@ export default function Contato() {
         <Box
 
         mt={{base:'50px', lg:'0px'}}
+        zIndex='300'
         >
           <FormElement />
         </Box>

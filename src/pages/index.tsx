@@ -48,7 +48,7 @@ export default function Home() {
 
           <Box
             pt={{ md: '8', lg: '0%', xl: '4%', '2xl': '0px' }}
-            mt={{ base: '0px', '2xl': '40px' }}
+            mt={{ base: '0px', '2xl': '-20px' }}
             m='auto'
             maxW='93%'>
             <Text

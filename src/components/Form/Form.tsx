@@ -8,7 +8,7 @@ import InputForm from "./InputForm";
 export default function FormElement() {
 
   return (
-    <Flex as='form' w='100%' flexDirection='column' bgColor='Green.300' p={{ base: '4', sm: '8' }}>
+    <Flex as='form' w='100%' borderRadius={5} flexDirection='column' bgColor='Green.300' p={{ base: '4', sm: '8' }}>
       <Box>
         <H2 color='white' textAlign='center'>Gostaria de receber uma proposta para o seu negócio?</H2>
 
@@ -23,10 +23,15 @@ export default function FormElement() {
         <InputForm name='branches' placeholder='Quantidade de ramais' />
         <InputForm name='company_namy' placeholder='Nome da empresa' />
       </Box>
-      <Textarea mt='4' focusBorderColor="Blue.800" variant='outline' placeholder="Conte um pouco sobre sua procura, iremos preparar um orçamento especial para você!" bgColor='white' />
+      <Textarea
+        mt='4'
+        focusBorderColor="Blue.800"
+        variant='outline'
+        placeholder="Conte um pouco sobre sua procura, iremos preparar um orçamento especial para você!"
+        bgColor='white' />
 
       <Flex alignItems='start' mt='6'>
-        <Checkbox my='5' color='white' colorScheme='red' />
+        <Checkbox my='5' color='white' colorScheme='red' required />
         <Text color='white' mt='4' ml='2' fontSize={{ base: '14px', sm: '16px' }}>
           Concordo em permitir que a Sin Company tenha acesso aos meus dados para me responder com propostas promocionais referente ao meu pedido.
         </Text>

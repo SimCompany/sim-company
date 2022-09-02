@@ -104,8 +104,7 @@ export default function Menu() {
       maxW={{ '2xl': '1344px' }}
       mx={{ base: '5%', lg: '10%', '2xl': '15%' }}>
       <Flex alignSelf='center'>
-        <Text color='Green.500' fontSize='24px' fontWeight='medium' mr='1'>Sim</Text>
-        <Text color='Blue.800' fontSize='24px' fontWeight='medium'>Company</Text>
+        <Logo w='50px' />
       </Flex>
 
       <SetMenuItem direction='row' alignItems='center' spacing='8' />
