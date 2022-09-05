@@ -111,7 +111,7 @@ export default function Serviços() {
 
       <Grid
         mt={{ base: '50px', md: '50px', lg: '50px', xl: '-50px', '2xl': '-100px' }}
-        templateColumns={{ base: '1fr', md: '1fr', lg: '1fr 1fr', xl: '1fr 1fr' }}
+        gridTemplateColumns={{ base: '1fr', lg: '1fr 1fr', xl: '1fr 1fr' }}
         maxW={{ base: '90%', md: '80%', '2xl': '1344px' }}
         mx={{ base: '5%', md: '10%', '2xl': '15%' }}
         m='50px auto'
@@ -135,7 +135,7 @@ export default function Serviços() {
         maxW='1344px'
         justifyItems='center'
         mx={{ base: '5%', md: '10%', '2xl': '15%' }}
-        templateColumns={{ base: '1fr', sm: '1fr 1fr', md: '1fr 1fr 1fr', lg: '1fr 1fr 1fr 1fr', xl: '1fr 1fr 1fr 1fr 1fr' }}
+        gridTemplateColumns={{ base: '1fr', sm: '1fr 1fr', md: '1fr 1fr 1fr', lg: '1fr 1fr 1fr 1fr', xl: '1fr 1fr 1fr 1fr 1fr' }}
         templateRows={{ base: '1fr 1fr' }}
 
         rowGap='20px'
