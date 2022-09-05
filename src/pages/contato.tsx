@@ -9,7 +9,7 @@ import H2 from "../components/Texts/H2";
 
 export default function Contato() {
   const mobileResolut = useBreakpointValue({
-    md: true,
+    base: true,
     lg: false
   })
 

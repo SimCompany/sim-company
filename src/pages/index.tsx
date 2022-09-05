@@ -22,7 +22,7 @@ import Information from "../components/Information/Information";
 
 export default function Home() {
   const isLargerThan30Em = useBreakpointValue({
-    md: true,
+    base: true,
     lg: false
   })
 
@@ -38,7 +38,7 @@ export default function Home() {
 
 
         <Grid
-          gridTemplateColumns={{ sm: '1fr', md: '60% 40%', lg: '55% 45%' }}
+          gridTemplateColumns={{ base: '1fr', md: '60% 40%', lg: '55% 45%' }}
           w='100%'
           maxW={{ sm: '90%', lg: '80%', xl: '80%', '2xl': '70%' }}
           mx={{ sm: '5%', lg: '10%', xl: '10%', '2xl': '15%' }}
