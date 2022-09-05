@@ -6,12 +6,23 @@ import Background from './../img/index/fundo01.jpg'
 import Mobile from './../img/index/fundo-mobile.jpg'
 import FormElement from "../components/Form/Form";
 import H2 from "../components/Texts/H2";
+import { useEffect, useState } from "react";
 
 export default function Contato() {
+  const [mobile, setMobile] = useState<Boolean>()
+
   const mobileResolut = useBreakpointValue({
     base: true,
     lg: false
   })
+
+  useEffect(() => {
+    if(window.innerWidth > 768) {
+      setMobile(true)
+    } else {
+      setMobile(false)
+    }
+  }, [mobileResolut])
 
   return (
     <Box
@@ -20,19 +31,19 @@ export default function Contato() {
       pb={{ base: '1250px', sm: '1000px', md: '1100px', lg: '480px', '2xl': '200px' }}
     >
       {
-        mobileResolut ? <Image src={Mobile} alt='background azul' /> : <Image src={Background} alt='background blue' />
+        mobile ? <Image src={Mobile} alt='background azul' /> : <Image src={Background} alt='background blue' />
       }
 
 
       <Grid
-        maxW={{ '2xl': '1344px' }}
+        maxW='1344px'
         margin={{ base: '5%', md: '10%', lg: '10%', '2xl': '15%' }}
         templateColumns={{ base: '1fr', lg: '1fr 1fr' }}
         position='absolute'
         bottom={{ base: '2vw', sm: '0px', md: '-150px', lg: '-180px', '2xl': '-300px' }}
       >
         <Box
-          mr={{ md: '0px', lg: '10%' }}
+          mr={{ base: '0px', lg: '10%' }}
         >
           <H2
             color='white'
