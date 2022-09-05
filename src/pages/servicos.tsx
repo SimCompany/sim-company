@@ -18,10 +18,6 @@ import H3 from "../components/Texts/H3";
 export default function Serviços() {
   const [isLargerThan30Em] = useMediaQuery('(max-width:765px)')
 
-  useEffect(() => {
-    console.log(isLargerThan30Em)
-  }, [isLargerThan30Em])
-
   return (
     <main style={{ maxWidth: '1920px', margin: '0 auto' }}>
       <Box

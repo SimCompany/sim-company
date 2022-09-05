@@ -21,7 +21,6 @@ import Information from "../components/Information/Information";
 
 
 export default function Home() {
-  // const [isLargerThan30Em] = useMediaQuery('(max-width:765px)')
   const isLargerThan30Em = useBreakpointValue({
     md: true,
     lg: false

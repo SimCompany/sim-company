@@ -8,7 +8,7 @@ import FormElement from "../components/Form/Form";
 import H2 from "../components/Texts/H2";
 
 export default function Contato() {
-  const isLargerThan30Em = useBreakpointValue({
+  const mobileResolut = useBreakpointValue({
     md: true,
     lg: false
   })
@@ -20,7 +20,7 @@ export default function Contato() {
       pb={{ base: '1250px', sm: '1000px', md: '1100px', lg: '480px', '2xl': '200px' }}
     >
       {
-        isLargerThan30Em ? <Image src={Mobile} alt='background azul' /> : <Image src={Background} alt='background blue mobile' />
+        mobileResolut ? <Image src={Mobile} alt='background azul' /> : <Image src={Background} alt='background blue' />
       }
 
 
