@@ -46,8 +46,8 @@ export default function Serviços() {
 
 
         <Grid
-          gridTemplateColumns={{ sm: '1fr', md: '50% 40%', lg: '45% 45%' }}
-          maxW={{ sm: '90%', md: '80%', '2xl': '1344px' }}
+          gridTemplateColumns={{base: '1fr', md: '50% 40%', lg: '45% 45%' }}
+          maxW={{ base: '90%', md: '80%', '2xl': '1344px' }}
           mx={{ base: '5%', md: '10%', '2xl': '15%' }}
 
           position='absolute'
@@ -84,7 +84,7 @@ export default function Serviços() {
               color='white'
               fontWeight='semibold'
               fontSize={{ base: '3vw', md: '1.0vw', xl: '1.10vw', '2xl': '18px' }}
-              width={{ md: '98%', xl: '88%', '2xl': '550px' }}
+              width={{ base: '98%', xl: '88%', '2xl': '550px' }}
               textAlign='center'
             >
               PABX EM NUVEM - APARELHO - VIDEOCONFERÊNCIA
@@ -111,7 +111,7 @@ export default function Serviços() {
 
       <Grid
         mt={{ base: '50px', md: '50px', lg: '50px', xl: '-50px', '2xl': '-100px' }}
-        gridTemplateColumns={{ sm: '1fr', md: '1fr', lg: '1fr 1fr', xl: '1fr 1fr' }}
+        gridTemplateColumns={{ base: '1fr', md: '1fr', lg: '1fr 1fr', xl: '1fr 1fr' }}
         maxW={{ base: '90%', md: '80%', '2xl': '1344px' }}
         mx={{ base: '5%', md: '10%', '2xl': '15%' }}
         m='50px auto'
@@ -196,8 +196,8 @@ export default function Serviços() {
 
       <Grid
         mt={{ base: '150px', md: '150px' }}
-        templateColumns={{ md: '1fr', xl: '1fr 1fr' }}
-        columnGap={{ md: '0', xl: '5%' }}
+        templateColumns={{ base: '1fr', xl: '1fr 1fr' }}
+        columnGap={{ base: '0', xl: '5%' }}
         mx={{ base: '5%', md: '10%' }}
       >
         <GridItem>
