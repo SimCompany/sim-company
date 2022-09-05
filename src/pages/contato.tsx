@@ -39,7 +39,7 @@ export default function Contato() {
           margin={{ base: '5%', md: '10%', lg: '10%', '2xl': '15%' }}
           templateColumns={{ base: '1fr', lg: '1fr 1fr' }}
           position='absolute'
-          bottom={{ base: '750px', sm: '550px', md: '500px', lg: '250px', '2xl': '200px' }}
+          bottom={{ base: '850px', sm: '550px', md: '500px', lg: '250px', '2xl': '200px' }}
         >
           <Box
             mr={{ base: '0px', lg: '10%' }}
@@ -47,7 +47,9 @@ export default function Contato() {
             <H2
               color='white'
               mb='25px'
-              display={{ base: 'none', sm: 'inline' }}
+              display={{ base: 'none', sm: 'inline' }
+       
+          }
             >Gostaria de falar com nossa equipe tecnica ?</H2>
             <Text color='white'>(11) 99999-9999</Text>
             <Text color='white'>(11) 99999-9999</Text>
@@ -70,7 +72,9 @@ export default function Contato() {
 
 
       </Box>
-      <Box h={{base:'950px', sm:'650px', md:'1100px', lg:'420px', '2xl':'200px'}} />
+      <Box 
+
+      h={{base:'950px', sm:'650px', md:'1100px', lg:'420px', '2xl':'200px'}} />
     </>
   )
 }

@@ -16,6 +16,13 @@ export const theme = extendTheme({
       "800": "#1f263c"
     }
   },
+  breakpoints: {
+    sm: '30em',
+    md: '48em',
+    lg: '62em',
+    xl: '80em',
+    '2xl': '96em',
+  },
   fonts: {
     heading: 'montserrat',
     body: 'montserrat'
