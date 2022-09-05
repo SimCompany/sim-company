@@ -1,9 +1,9 @@
-import { Box, Flex, Grid, GridItem, Stack, Text, useMediaQuery } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, Stack, Text, useBreakpointValue, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 
 import Background from './../img/index/fundo01.jpg'
 import Mobile from './../img/index/fundo-mobile.jpg'
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import Product from './../img/services/tell.png'
 import FormElement from "../components/Form/Form";
@@ -16,7 +16,21 @@ import CallCenter from './../img/services/call-center.jpg'
 import H3 from "../components/Texts/H3";
 
 export default function Serviços() {
-  const [isLargerThan30Em] = useMediaQuery('(max-width:765px)')
+  const [mobile, setMobile] = useState<Boolean>()
+
+  const mobileResolut = useBreakpointValue({
+    base: true,
+    lg: false
+  })
+
+  useEffect(() => {
+    if(window.innerWidth > 768) {
+      setMobile(false)
+    } else {
+      setMobile(true)
+    }
+  }, [mobileResolut])
+
 
   return (
     <main style={{ maxWidth: '1920px', margin: '0 auto' }}>
@@ -25,7 +39,7 @@ export default function Serviços() {
         zIndex={-1}
       >
         {
-          isLargerThan30Em ?
+          mobile ?
             <Image src={Mobile} alt='background azul' /> :
             <Image src={Background} alt='background blue mobile' />
         }
