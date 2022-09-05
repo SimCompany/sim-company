@@ -46,7 +46,7 @@ export default function Serviços() {
 
 
         <Grid
-          gridTemplateColumns={{base: '1fr', md: '50% 40%', lg: '45% 45%' }}
+          templateColumns={{base: '1fr', md: '50% 40%', lg: '45% 45%' }}
           maxW={{ base: '90%', md: '80%', '2xl': '1344px' }}
           mx={{ base: '5%', md: '10%', '2xl': '15%' }}
 
@@ -111,7 +111,7 @@ export default function Serviços() {
 
       <Grid
         mt={{ base: '50px', md: '50px', lg: '50px', xl: '-50px', '2xl': '-100px' }}
-        gridTemplateColumns={{ base: '1fr', md: '1fr', lg: '1fr 1fr', xl: '1fr 1fr' }}
+        templateColumns={{ base: '1fr', md: '1fr', lg: '1fr 1fr', xl: '1fr 1fr' }}
         maxW={{ base: '90%', md: '80%', '2xl': '1344px' }}
         mx={{ base: '5%', md: '10%', '2xl': '15%' }}
         m='50px auto'
