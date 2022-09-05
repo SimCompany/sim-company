@@ -18,9 +18,9 @@ export default function Contato() {
 
   useEffect(() => {
     if(window.innerWidth > 768) {
-      setMobile(true)
-    } else {
       setMobile(false)
+    } else {
+      setMobile(true)
     }
   }, [mobileResolut])
 
