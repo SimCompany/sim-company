@@ -29,7 +29,7 @@ export default function Serviços() {
     } else {
       setMobile(true)
     }
-  }, [mobileResolut])
+  }, [])
 
 
   return (
