@@ -1,4 +1,5 @@
 import { Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, HStack, Icon, IconButton, Link, Text, useBreakpointValue, useDisclosure } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { RiMenuLine } from "react-icons/ri";
 import { useSidebarDrawer } from "../../context/SideBarDrawerContext";
@@ -18,11 +19,12 @@ export default function Menu() {
     lg: false
   })
 
+  const router = useRouter()
+
+
   useEffect(() => {
-    setTimeout(() => {
-      console.log(isOpen)
-    }, 3000)
-  })
+    onClose
+  }, [router.asPath])
 
   if (isDrawer) {
     return (

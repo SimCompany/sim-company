@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Grid, GridItem, Text, useMediaQuery } from "@chakra-ui/react";
+import { Box, Button, Flex, Grid, GridItem, Text, useBreakpointValue, useMediaQuery } from "@chakra-ui/react";
 import Image from 'next/image'
 import FormElement from "../components/Form/Form";
 import Background from './../img/index/fundo01.jpg'
@@ -21,11 +21,11 @@ import Information from "../components/Information/Information";
 
 
 export default function Home() {
-  const [isLargerThan30Em] = useMediaQuery('(max-width:765px)')
-
-  useEffect(() => {
-    console.log(isLargerThan30Em)
-  }, [isLargerThan30Em])
+  // const [isLargerThan30Em] = useMediaQuery('(max-width:765px)')
+  const isLargerThan30Em = useBreakpointValue({
+    md: true,
+    lg: false
+  })
 
   return (
     <main style={{ maxWidth: '1920px', margin: '0 auto' }}>
