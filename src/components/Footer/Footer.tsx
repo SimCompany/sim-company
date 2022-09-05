@@ -6,7 +6,7 @@ import { TiSocialFacebookCircular, TiSocialLinkedinCircular } from "react-icons/
 export default function Footer() {
 
   return (
-    <Box as='footer' bg='Blue.800'>
+    <Box as='footer' bg='Blue.800' >
       <Grid
         bgColor='Blue.800'
         gridTemplateColumns={{ base: '1fr', sm: ' 1fr 1fr', lg: '1fr 1fr 1fr' }}
