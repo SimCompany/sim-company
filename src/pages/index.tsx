@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Grid, GridItem, Text, useBreakpointValue, useMediaQuery } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, Text, useBreakpointValue } from "@chakra-ui/react";
 import Image from 'next/image'
 import FormElement from "../components/Form/Form";
 import Background from './../img/index/fundo01.jpg'
@@ -12,11 +12,6 @@ import Phone from './../img/index/aparelho-ip.jpg'
 import Modelo from './../img/index/pabx-nuvem.jpg'
 import H3 from "../components/Texts/H3";
 
-import { RiInstagramLine } from 'react-icons/ri'
-import { TiSocialLinkedinCircular, TiSocialFacebookCircular } from 'react-icons/ti'
-import { Icon } from "@chakra-ui/react";
-import H4 from "../components/Texts/H4";
-import { useEffect } from "react";
 import Information from "../components/Information/Information";
 
 
@@ -82,7 +77,7 @@ export default function Home() {
               mt={{ base: '2', sm: '4' }}
               textAlign={{ base: 'center', md: 'start' }}
             >
-              Uma tecnologia de computação onde utiliza a internet
+              Uma tecnologia de computação que utiliza a internet
               para armazenar e gerenciar a solução de PABX.
               A tecnologia em nuvem elimina equipamentos e estrutura
               física no local, proporcionando atualizações sem custo e
@@ -113,7 +108,7 @@ export default function Home() {
           <H2 mb='10'>3 Motivos para mudar agora para o PABX em nuvem</H2>
           <Information
             title='Invista'
-            description='Precisa do novo para a sua empresa, o melhor jeito é investir em
+            description='Precisa do novo para a sua empresa? o melhor jeito é investir em
             quem oferece qualidade de verdade ao seu atendimento.
             A SIM Company possui tráfego próprio de terminação de chamadas
             garantindo mais qualidade nas suas ligações.'
@@ -123,15 +118,15 @@ export default function Home() {
             description='Potencializa a comunicação da sua empresa com as tecnologias
             VoIP e PABX em nuvem. Com a telefonia em nuvem, o seu negócio
             terá mais do que uma telefonia convencional, um sistema em
-            nuvem, que proporcionará inovação, facilidades e mobilidade para
+            nuvem, que proporcionará inovação, facilidade e mobilidade para
             o seu dia a dia.'
           />
           <Information
             title='Comunique-se'
-            description='Precisa do novo para a sua empresa, o melhor jeito é investir em
-            quem oferece qualidade de verdade ao seu atendimento.
-            A SIM Company possui tráfego próprio de terminação de chamadas
-            garantindo mais qualidade nas suas ligações.'
+            description='Quem não quer se comunicar com qualidade? Com recursos de 
+            última geração,a net2phone garante qualidade do início ao fim das 
+            ligações, além de funcionalidade para aprimorar a sua experiência 
+            com os seus clientes..'
           />
         </Box>
       </Grid>
@@ -154,7 +149,7 @@ export default function Home() {
         <GridItem alignSelf='center' area='text' mt={{ base: '40px', md: '0px' }}>
           <Information
             title='Ganhe aparelho de IP + RAMAL'
-            description='Transforma a velha tefonia fixa em uma moderna ferramenta
+            description='Transforme a velha tefonia fixa em uma moderna ferramenta
             de comunicação para sua empresa, transferindo todo o serviço
             de voz para a NUVEM. Customizamos um plano de voz adequado
             a realidade da sua empresa e seu PABX VIRTUAL será GRATUITO!' />
@@ -183,7 +178,7 @@ export default function Home() {
               Mais segurança e qualidade de atendimento.<br />
               Saiba o que foi falado ao seu cliente e monitore o
               desenvolvimento de sua equipe. A gravação da ligação
-              é um dos recurso presente em todos os planos que você
+              é um dos recursos presentes em todos os planos e você
               ganha sem ter que pagar nada a mais por isso!
             </Text>
           </Box>

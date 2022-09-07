@@ -48,13 +48,11 @@ export default function Contato() {
               color='white'
               mb='25px'
               display={{ base: 'none', sm: 'inline' }
-       
-          }
+
+              }
             >Gostaria de falar com nossa equipe tecnica ?</H2>
-            <Text color='white'>(11) 99999-9999</Text>
-            <Text color='white'>(11) 99999-9999</Text>
-            <Text color='white'>email@gmail.com</Text>
-            <Text color='white'>email@gmail.com</Text>
+            <Text color='white'>(11) 5039-9046</Text>
+            <Text color='white'>contato@simcompany.com</Text>
 
             <Text color='white' mt={{ base: '0px', lg: '40px' }}>Endereço: Rua Direita N°7 - SP CEP 7777-077</Text>
 
@@ -72,9 +70,9 @@ export default function Contato() {
 
 
       </Box>
-      <Box 
+      <Box
 
-      h={{base:'950px', sm:'650px', md:'1100px', lg:'420px', '2xl':'200px'}} />
+        h={{ base: '950px', sm: '650px', md: '1100px', lg: '420px', '2xl': '200px' }} />
     </>
   )
 }
