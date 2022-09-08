@@ -25,7 +25,7 @@ export default function FormElement() {
     const data = {
       domain: 'www.simcompany.com.br',
       emailTo: 'matteus.isaque28@gmail.com',
-      title: 'Formulário simcompany',
+      title: 'Formulário sim company',
       name,
       email,
       phone,
@@ -36,9 +36,13 @@ export default function FormElement() {
       message
     }
 
-    await axios.post(`${process.env.NEXT_PUBLIC_EMAIL}/ticonnected`, data)
+    try {
+      await axios.post(`${process.env.NEXT_PUBLIC_EMAIL}/ticonnected`, data)
+    } catch (error) {
+      console.log(error)
+    }
 
-    // await reload()
+    await reload()
   }
 
 
