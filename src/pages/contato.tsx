@@ -51,7 +51,7 @@ export default function Contato() {
 
               }
             >Gostaria de falar com nossa equipe tecnica ?</H2>
-            <Text color='white'>(11) 5039-9046</Text>
+            <Text color='white'>(011) 5039-9046</Text>
             <Text color='white'>contato@simcompany.com</Text>
 
             <Text color='white' mt={{ base: '0px', lg: '40px' }}>Endereço: Rua Direita N°7 - SP CEP 7777-077</Text>
