@@ -16,8 +16,7 @@ export default function Footer() {
           <Text fontWeight='bold' color='white'>Contato</Text>
           <Stack spacing={1}>
             <Text mt='2' fontWeight='light' color='white'>contato@simcompany.com</Text>
-            <Text fontWeight='light' color='white'>(11) 99999-9999</Text>
-            <Text fontWeight='light' color='white'>(11) 99999-9999</Text>
+            <Text fontWeight='light' color='white'>(11) 5039-9046</Text>
           </Stack>
 
           <HStack mt='8'>
